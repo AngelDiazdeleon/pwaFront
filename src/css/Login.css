@@ -1,0 +1,102 @@
+:root {
+  --primary: #0078d4;
+  --primary-dark: #005fa3;
+  --background: #f0f2f5;
+  --error: #ffe2e2;
+}
+
+body {
+  background: var(--background);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.auth-title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-input:focus {
+  border-color: var(--primary);
+}
+
+.auth-button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  background: var(--primary-dark);
+}
+
+.auth-error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  background: var(--error);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.auth-toggle {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-toggle span {
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
