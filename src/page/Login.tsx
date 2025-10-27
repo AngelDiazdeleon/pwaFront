@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { api, setAuth } from "../api";
-import "../css/login.css";
+import "../css/Login.css";
 
 export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
